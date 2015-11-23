@@ -282,66 +282,13 @@
 // -------------------------------------------------------------
 // -------------------------------------------------------------
 
-.jobs{
-	width: $fullPercent;
-	min-height: 312px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	position: relative;
-	background-color: $lightGrey;
-
-	.listJobs{
-		@include colFull;
-		padding-right: 20px;
-	}
-
-	.titleD{
-		margin-bottom: 40px;
-	}
-
-	.textD{
-		margin-bottom: 95px;
-		text-align: center;
-	}
-
-	.boxHold{
-		width: 33.33%;
-		padding: 0px 0px 0px 20px;
-		margin-bottom: 20px;
-		float: left;
-	}
-
-	.box{
-		width: 100%;
-		float: left;
-		position: relative;
-		border: 1px solid #a6a6a6;
-
-		.boxImg{
-			width: 100%;
-			margin-bottom: 10px;
-			line-height: 0px;
-			text-align: center;
-		}
-
-		.name{
-			@include textD;
-			margin-bottom: 10px;
-			text-align: center;
-		}
-	}
-}
-
-// -------------------------------------------------------------
-// -------------------------------------------------------------
-
 .contact{
 	width: $fullPercent;
 	min-height: 312px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	position: relative;
-	background-color: $white;
+	background-color: $lightGrey;
 
 	.titleD{
 		margin-bottom: 34px;
@@ -378,6 +325,7 @@
 				position: absolute;
 				top: 0px;
 				left: 0px;
+				border-radius: 20px;
 				background-color: rgba(0, 0, 0, 0.1);
 				content: "";
 			}
@@ -388,8 +336,7 @@
 		}
 
 		.linkedin{
-			background: url(https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-128.png) no-repeat center center;
-			background-size: cover;
+			background: url('../img/sprite.png') no-repeat -66px 0;
 		}
 
 		.instagram{
@@ -427,7 +374,7 @@
 	height: 62px;
 	padding: 0px 20px;
 	position: relative;
-	background-color: $lightGrey;
+	background-color: $white;
 
 	.signature{
 		width: $fullPercent;
