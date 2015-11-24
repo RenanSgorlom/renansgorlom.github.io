@@ -1,9 +1,9 @@
 /*! Renan Sgorlom Front end developer */
 
 //imports
-@import "mixins";
-@import "fontface";
-@import "variables";
+@import "_mixins";
+@import "_fontface";
+@import "_variables";
 
 // -------------------------------------------------------------
 // -------------------------------------------------------------
@@ -111,7 +111,7 @@
 
 .aboutMe{
 	width: $fullPercent;
-	height: 725px;
+	min-height: 725px;
 	padding-top: 90px;
 	position: relative;
 	background-color: $white;
@@ -374,7 +374,7 @@
 	height: 62px;
 	padding: 0px 20px;
 	position: relative;
-	background-color: $white;
+	background-color: $lightGrey;
 
 	.signature{
 		width: $fullPercent;
@@ -389,6 +389,136 @@
 
 // -------------------------------------------------------------
 // -------------------------------------------------------------
+
+.jobs{
+	width: $fullPercent;
+	min-height: 312px;
+	padding-top: 50px;
+	position: relative;
+	background-color: $white;
+
+	.listJobs{
+		@include colFull;
+		padding-right: 20px;
+	}
+
+	.titleD{
+		margin-bottom: 40px;
+	}
+
+	.textD{
+		margin-bottom: 95px;
+		text-align: center;
+	}
+
+	.boxHold{
+		width: 33.33%;
+		padding: 0px 0px 0px 20px;
+		margin-bottom: 20px;
+		float: left;
+	}
+
+	.box{
+		width: 100%;
+		float: left;
+		position: relative;
+		border: 1px solid #a6a6a6;
+
+		.boxImg{
+			width: 100%;
+			margin-bottom: 10px;
+			line-height: 0px;
+			text-align: center;
+
+			img{
+				max-width: 100%;
+			}
+		}
+
+		.name{
+			@include textD;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+	}
+}
+
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+
+@media screen and (max-width: 1100px) and (min-width: 641px) {
+	.contentAll {
+		width: 95%
+	}
+	.aboutMe .textHold {
+		max-width: 100%
+	}
+	.mySkills .skillsList .box {
+		width: 20%
+	}
+}
+
+@media screen and (max-width: 854px) and (min-width: 641px) {
+	.mySkills .skillsList .box {
+		width: 25%
+	}
+
+	.jobs .boxHold{
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 640px) and (min-width: 0px) {
+	.btn {
+		float: initial;
+		display: table;
+		margin: auto
+	}
+	.firstPage .name {
+		height: 75px;
+		margin-top: -37.5px;
+		font-size: 60px;
+		-webkit-text-stroke-width: 0px
+	}
+	.firstPage .prof {
+		margin-bottom: -78px;
+		font-size: 16px
+	}
+	.contentAll {
+		width: 95%
+	}
+	.aboutMe {
+		padding-bottom: 40px
+	}
+	.aboutMe .holdCont {
+		padding-left: 0px
+	}
+	.aboutMe .img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		float: left;
+		position: relative
+	}
+	.mySkills .skillsList .skill .text {
+		margin-top: -11.5px;
+		height: 23px;
+		font-size: 19px
+	}
+	.mySkills .skillsList .box {
+		width: 50%
+	}
+	.otherSkills .listOtherSkills .box {
+		width: 100%;
+		margin-bottom: 20px
+	}
+	.contact .socialHold .ico {
+		margin-right: 10px
+	}
+	.jobs .boxHold{
+		width: 50%;
+	}
+}
 
 // -------------------------------------------------------------
 // -------------------------------------------------------------
